@@ -1,0 +1,9 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.0",
+  "description": "<%= _.slugify(appname) %>",
+  "dependencies": {
+    "express": "*",
+    "sockjs": "*"
+  }
+}

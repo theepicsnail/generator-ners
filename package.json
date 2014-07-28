@@ -1,0 +1,19 @@
+{
+  "name": "generator-ners",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "theepicsnail/generator-ners",
+  "author": {
+    "name": "Steven",
+    "email": "theepicsnail@gmail.com",
+    "url": "https://github.com/theepicsnail"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0"
+  }
+}

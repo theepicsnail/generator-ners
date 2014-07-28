@@ -1,0 +1,9 @@
+{
+  "name": "asdf",
+  "version": "0.0.0",
+  "description": "fdsa",
+  "dependencies": {
+    "express": "*",
+    "sockjs": "*"
+  }
+}
