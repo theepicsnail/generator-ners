@@ -1,7 +1,7 @@
 {
   "name": "generator-ners",
   "version": "0.1.0",
-  "description": "Node Express RequireJS SockJS",
+  "description": "Yeoman generator for Node Express RequireJS and SockJS",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "theepicsnail/generator-ners",
