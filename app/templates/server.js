@@ -43,7 +43,7 @@ function startServer() {
   var sockServer = require('./sjs')(server);
   sockServer.on('connection', onConnection);
 
-  port = process.env.PORT || 11235;
+  var port = process.env.PORT || 11235;
   server.listen(port, '0.0.0.0');
   console.log('http://localhost:' + port);
 }

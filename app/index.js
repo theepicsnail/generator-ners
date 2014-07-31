@@ -18,14 +18,15 @@ var NersGenerator = yeoman.generators.Base.extend({
   installdeps: function () {
     this.on('end', function () { this.installDependencies(); });
   },
-  bowerfile: function () { this.template('bower.json', 'bower.json'); },
-  packagejsonfile: function () { this.template('package.json', 'package.json'); },
+  bowerfile: function () { this.template('_bower.json', 'bower.json'); },
+  packagejsonfile: function () { this.template('_package.json', 'package.json'); },
   copyFiles: function () {
     this.mkdir('public');
     this.mkdir('public/js');
-    this.copy('public/js/rpc.js', 'public/js/rpc.js');
-    this.copy('public/js/main.js', 'public/js/main.js');
-    this.copy('public/index.html', 'public/index.html');
+    this.copy('server.js', 'sjs.js');
+    this.directory('public/', 'public/');
+    //this.copy('public/js/main.js', 'public/js/main.js');
+    //this.copy('public/index.html', 'public/index.html');
     this.copy('server.js', 'server.js');
     this.copy('sjs.js', 'sjs.js');
   }
