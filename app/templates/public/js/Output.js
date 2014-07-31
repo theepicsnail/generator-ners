@@ -8,8 +8,8 @@ define([], function () {
     pre.append('[' + timeStamp() + ']:');
     pre.append(document.createTextNode(content));
     pre.append('\n');
-    var output = $('#output');
-    output.scrollTop(output.height()+10);
+    var chat = $('#chat');
+    chat.scrollTop(chat[0].scrollHeight);
   }
   return {
     append: append,

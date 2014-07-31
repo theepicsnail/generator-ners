@@ -9,6 +9,11 @@ body {
   width:100%;
   display: table-row;
 }
+#chat {
+  overflow: scroll;
+  height: 100%;
+  border-bottom: 1px solid lightgray;
+}
 #input {
   width:100%;
   display: table-row;
