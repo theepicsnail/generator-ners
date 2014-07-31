@@ -1,12 +1,13 @@
 define([], function () {
-  $('#output').height(300);
   var pre = $('#chat');
   function timeStamp() {
     var d = new Date();
     return d.toLocaleDateString();
   }
   function append(content) {
-    pre.append('[' + timeStamp() + ']:' + content + '\n');
+    pre.append('[' + timeStamp() + ']:');
+    pre.append(document.createTextNode(content));
+    pre.append('\n');
     var output = $('#output');
     output.scrollTop(output.height()+10);
   }

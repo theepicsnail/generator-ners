@@ -1,9 +1,8 @@
 define([], function () {
-
   function Input() {
     this.onMessage = function () {}; // noop message handler
     var input = $('#input');
-
+    input.focus();
     // wrapper to call onMessage whenever it is rebound
     var handleMessage = function (msg) {
       this.onMessage(msg);
